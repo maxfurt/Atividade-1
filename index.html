@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Truco Score Tracker</title>
 </head>
 <body>
-    <h1>Atividade-1 Fabioblabla</h1>
+    <div class="container">
+        <h1>Truco dos Guris</h1>
+        <div class="Time">
+            <label for="TimeA">Time Visitantes: </label>
+            <input type="text" id="TimeA" placeholder="Time visitante" />
+        </div>
+        <div class="Time">
+            <label for="TimeB">Time da Casa: </label>
+            <input type="text" id="TimeB" placeholder="Time da casa" />
+        </div>
+        <div class="Tabela-Ponto">
+            <div class="Pontuação-Time">
+                <h2>Time Visitantes</h2>
+                <p id="PontoA">0</p>
+            </div>
+            <div class="Pontuação-Time">
+                <h2>Time da Casa</h2>
+                <p id="PontoB">0</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="TimeAUmPonto">Time A 1 Ponto</button>
+            <button id="TimeATresPonto">Time A 3 Pontos</button>
+            <button id="TimeASeisPonto">Time A 6 Pontos</button>
+            <button id="TimeADozePonto">Time A 12 Pontos</button>
+            <button id="TimeBUmPonto">Time B 1 Ponto</button>
+            <button id="TimeBTresPonto">Time B 3 Pontos</button>
+            <button id="TimeBSeisPonto">Time B 6 Pontos</button>
+            <button id="TimeBDozePonto">Time B 12 Pontos</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
 </body>
 </html>
